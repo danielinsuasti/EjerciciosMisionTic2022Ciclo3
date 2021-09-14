@@ -1,0 +1,10 @@
+.block {
+    background-color: rgba(255, 255, 0, 0.52);
+    display: block;
+}
+
+.inline{
+    background-color: cornflowerblue;
+    display: inline;
+}
+

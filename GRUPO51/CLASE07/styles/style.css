@@ -1,0 +1,23 @@
+/* Selectore ID, clase, etiqueta */
+
+
+/* #article-1 {
+    background-color: blue;
+} */
+
+
+
+
+article {
+    background-color: rgb(210, 163, 253);
+}
+
+.noticias__articulo {
+    background-color: aquamarine;
+}
+
+.noticias__cuadrito{
+    border : 2px solid red;
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,22 @@
+.div1 {
+    background-color: blueviolet;
+    height: 100px;  
+    width: 200px;
+    
+}
+
+.div2 {
+    background-color: #5DEAA8;
+    border: 10px solid red;
+    padding: 15px;
+    margin: 30px;   
+    
+}
+
+.div3 {
+    background-color: #5DEAA8;
+    
+    padding: 20px 50px 60px 90px;
+    margin: 30px 70px;   
+    
+}

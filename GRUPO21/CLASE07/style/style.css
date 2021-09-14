@@ -1,0 +1,32 @@
+/* Selectores de id, clase, etiqueta*/
+
+article {
+    background-color: aquamarine;
+}
+
+/* .noticias{
+    font-size: 15px;
+} */
+
+.noticias__articulo{
+    background-color: blueviolet;
+}
+
+.noticias__cuadrito{
+    background-color: aliceblue;
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+}
+
+.noticias__cuadrito--esp{
+    background-color: cornflowerblue;
+} 
+
+.noticia__texto{
+    font-size: 15px;
+}
+
+.noticia__texto--bigger{
+    font-size: 30px;
+}

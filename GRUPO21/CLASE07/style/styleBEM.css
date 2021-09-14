@@ -1,0 +1,30 @@
+/*Selectores id, clase, etiqueta*/
+
+.noticia{
+    background-color: aquamarine ;/*hablar de important*/
+    font-size: 20px;
+}
+
+.noticia--bgblue {
+    background-color: rgb(0, 255, 221);
+    
+}
+
+.noticia__texto--bigger{
+    font-size: 30px;
+}
+
+.noticias__articulo{
+    background-color: blueviolet;
+}
+
+.noticias__cuadradito{
+    border : 3px solid red;
+    width: 100px;
+    height: 100px;
+}
+    
+/* Ejemplo especificidad, no sobreescribe por la profundidad de la clase anterior */
+.noticias__articulo{
+    background-color: blue;
+}

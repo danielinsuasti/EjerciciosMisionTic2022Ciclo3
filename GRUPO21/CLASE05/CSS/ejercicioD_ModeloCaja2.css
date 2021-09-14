@@ -1,0 +1,19 @@
+.div1 {
+    border: 20px solid red;
+    background-color: aquamarine;
+    /* height: 100px; */
+    /* width: 200px;  */
+    padding: 20px;
+    margin: 40px;       
+}
+
+
+.div2 {
+    
+    background-color: rgb(157, 127, 255);    
+    height: 100px; 
+    width: 200px;  
+    padding: 50px;
+    margin: 40px;
+    border-radius: 25px;       
+}

@@ -1,0 +1,19 @@
+.primero {
+  font-size: 200%;
+}
+
+#division {
+  background-color: aqua;
+}
+
+p {
+  color: red;
+}
+
+a {
+  color: inherit;
+}
+
+p {
+  color: green;
+}
