@@ -1,12 +1,30 @@
 /*Selectores id, clase, etiqueta*/
 
+.seccion-noticias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: column wrap; shorthand*/ 
+    /* justify-content: center; */    
+
+
+    /* align-items: center; */
+    
+    
+}
+
 .noticia{
     background-color: aquamarine ;/*hablar de important*/
     font-size: 20px;
+    width: 48%;
+    /* Ejemplo para centrar dentro del articulo */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
 
 .noticia--bgblue {
-    background-color: green;
+    background-color: rgb(0, 153, 255);
     
 }
 
@@ -18,7 +36,7 @@
     background-color: blueviolet;
 }
 
-.noticia__cuadradito{
+.noticias__cuadradito{
     border : 3px solid red;
     width: 100px;
     height: 100px;
