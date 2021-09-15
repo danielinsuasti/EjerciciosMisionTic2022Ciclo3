@@ -22,6 +22,10 @@ body{
     width: 1400px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -48,14 +52,27 @@ body{
     border: 4px solid yellowgreen;
     height: 800px;
     align-items: center; */
+    margin-bottom: 100px;
 
+}
+
+
+.noticia{
+    background-color: rgb(210, 163, 253);
+    width: 50%; 
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 }
 
 .seccion-noticias--servicios{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; 
-    justify-content: space-around;      
+    justify-content: space-around;
+    background-color: unset;      
 
 }
 
@@ -69,18 +86,8 @@ body{
 }
 
 
-.noticia{
-    width: 50%;
 
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-}
 
-article {
-    background-color: rgb(210, 163, 253);
-}
 
 .noticia__articulo {
     background-color: aquamarine;
@@ -100,4 +107,22 @@ article {
 .noticia__texto--bigtext{
     font-size: 15px;
     color: blue;
+} */
+
+.main-footer{
+    background-color: teal;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding : 30px
+
+}
+
+.espacio-blanco{
+    height: 500px;
+}
+
+/* .contenedor-log-titulo{
+    display: flex;
+    justify-content: space-around;
 } */
