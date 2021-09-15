@@ -1,0 +1,39 @@
+* CLASES CSS LAYOUT
+
+    *CONTENEDORES
+        ->container
+            Centrar el contenido
+            https://getbootstrap.com/docs/5.1/layout/containers/
+
+
+        ->container-tamaño
+            Centrar el contenido en un tamaño especial
+            tamaños -> sm, md, lg, xl
+
+        ->container-fluid
+            Abarca el 100%
+
+
+    *FILAS
+        ->col
+            + col
+                Dividir las 12 columnas en el numero de columnas que hay dentro el row    
+
+            + col-auto
+                El ancho de elemento es igual a su contenido.
+                (Su ajuste depende de lo que haya dentro del elemento)
+
+            + col-numero
+                El ancho de la columna es igual al numero especificado
+
+            + col-tamaño
+                https://getbootstrap.com/docs/5.1/layout/containers/
+                sm 
+                md
+                lg
+                xl
+            
+            + col-tamaño-auto
+
+            + col-tamaño-numero
+
