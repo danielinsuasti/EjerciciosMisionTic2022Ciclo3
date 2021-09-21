@@ -156,8 +156,10 @@ alert("La confirmacion es " + confirmacion);
 
 //Atributos
 var personaEstudiante = {
-    nombre : "Alejandro", edad : 22,
-    colorFavorito : "verde", altura : 156
+    nombre : "Alejandro", 
+    edad : 22,
+    colorFavorito : "verde", 
+    altura : 156
 }
 
 // 13. PROPIEDAES DE OBJETOS
