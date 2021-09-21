@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>TITULO</h1>
+
+    <p>Parrafo uno</p>
+    <p id="parrafo_2">Parrafo dos</p>
+    <p>Parrafo tres</p>
+
+    <script>
+        // document.getElementById("parrafo_2").innerHTML = "HOLA MUNDO"
+        var arr = document.getElementsByTagName("p");
+        for (let x = 0; x < arr.length; x++){
+            arr[x].innerHTML = "HOLA COMO ESTAS";
+        }
+
+    </script>
+    
+</body>
+</html>
