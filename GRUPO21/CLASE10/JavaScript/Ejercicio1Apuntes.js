@@ -160,15 +160,18 @@ var personaEstudiante = {
     colorFavorito : "verde", altura : 156
 }
 
+// 13. PROPIEDAES DE OBJETOS
 personaEstudiante.nombre
 personaEstudiante['nombre']
+personaEstudiante.nombre.length
 
-//Metodos
+//14 .Metodos
 
+//object.methodName()
 document.write("Esto es algun texto");
 
 
-//definir Metodos con this
+// 15. CONSTRUCTOR DE OBJETOS
 function persona(nombre, edad, colorFav){
     this.nombre = nombre;
     this.edad = edad;
@@ -177,4 +180,29 @@ function persona(nombre, edad, colorFav){
         this.nombre = name
     }
 }
+
+var p1 = new persona("David", 25, "naranja");
+
+
+p1.cambiarNombre("Alejandra")
+
+
+
+// 16. ARRAYS
+
+var cursos = new Array("Python", "Java", "Html", "CSS")
+var course1 = cursos[0] // Python
+
+cursos[3] = "Bootstrap"
+
+// 17. SELECCION DE ELEMENTOS
+document.getElementById("id")
+document.getElementsByClassName("nombreClase")
+document.getElementsByTagName("NombreEtiqueta")
+
+document.querySelector("#id")
+document.querySelector(".nombreClase")
+document.querySelector("NombreEtiqueta")
+
+
 
