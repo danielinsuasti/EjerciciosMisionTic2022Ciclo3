@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id = "myImage" src="https://placeimg.com/300/300/arch/grayscale" alt="">
+    <button id= "changeBtn">Cambiar Imagen</button>
+
+</body>
+
+
+
+    <script>
+        function changeImage(){
+
+        }
+
+
+        let changeImageArrow = () => {
+            //Obtener los elemento del Dom
+            var changeBtn = document.getElementById("changeBtn");
+            var myImage = document.getElementById("myImage");
+
+
+            //Evento de escucha
+            changeBtn.addEventListener( 'click', (e) =>{
+
+                if(myImage.src === "https://placeimg.com/300/300/arch/grayscale" ){
+                    myImage.src = "https://placeimg.com/300/300/nature";
+                }else{
+                    myImage.src = "https://placeimg.com/300/300/arch/grayscale"
+                }              
+
+            })
+        }
+        
+        changeImageArrow();
+
+
+    </script>
+
+</html>

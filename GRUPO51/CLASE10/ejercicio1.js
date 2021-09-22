@@ -75,7 +75,7 @@ let contadorImpresiones =0;
 
 function myFunction(){
     contadorImpresiones++;
-    alert("Alert Box!" + contadorImpresiones)
+    alert("Alert Box!" + contadorImpresiones);
 }
 // myFunction()
 // myFunction();
@@ -91,7 +91,6 @@ function myFunctionSuma(a , b){
 
 function myFunctionMult( a, b){
     return a * b
-
 }
 
 // 9. ALERT PROMPT CONFIRM
@@ -163,6 +162,9 @@ var p2 = new personaTrabajador("Luisa", 23, "Azul");
 //Los arreglos registran multiples valores en una sola variable
 
 var cursos = new Array("Python", "Java", "HTML", "CSS", "BOOTSTRAP", "JAVASCRIPT")
+console.log(cursos[0])
+cursos[0]= "JavaScript"
+
 
 // 18. DOM
 
@@ -171,4 +173,9 @@ var cursos = new Array("Python", "Java", "HTML", "CSS", "BOOTSTRAP", "JAVASCRIPT
     document.getElementsByClassName("nombreClase");
     document.getElementsByTagName("etiqueta");
     document.getElementsByName("atributoName");
+    
     document.querySelector("#title");
+    document.querySelector(".nombreClase")
+    document.querySelector("etiqueta")
+
+    
