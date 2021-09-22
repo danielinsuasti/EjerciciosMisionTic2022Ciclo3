@@ -67,7 +67,7 @@ const mostrarMatrix = () =>{
 
     
     // Ejercicio, como crearian un enlace y lo adicionarian al Dom?
-
+    
     let enlace = document.createElement("a");
     enlace.innerText = "Sition Oficial IMDB";
     // enlace.href = "https://www.imdb.com/title/tt0133093/";

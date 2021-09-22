@@ -48,8 +48,26 @@ const mostrarMatrix = () =>{
     //Mostrar elementos en el DOM
    //2. Crear los elementos en html y acceder a sus atributos para modificar el html
     let tituloPelicula = document.getElementById("tituloPelicula");
+    let imagenPelicula = document.getElementById("imagenPelicula");
+    let plotPelicula = document.getElementById("plotPelicula");
+    let actoresPelicula = document.getElementById("actoresPelicula");
+    let fechaPelicula = document.getElementById("fechaPelicula");
+    let enlacePelicula = document.getElementById("enlacePelicula");
+
 
     tituloPelicula.innerText = matrix.Title;
+    
+    imagenPelicula.src = matrix.Poster;
+    imagenPelicula.alt = "Poster Pelicula The Matrix";
+    plotPelicula.innerText = matrix.Plot;
+    
+    actoresPelicula.innerText = matrix.Actors;
+    
+    fechaPelicula.innerText = matrix.Year;
+    
+    enlacePelicula.innerText = "Sitio Oficial IMDB";
+    enlacePelicula.href = `https://www.imdb.com/title/${matrix.imdbID}`;
+    enlacePelicula.target = "_blank";
 
 }
 
