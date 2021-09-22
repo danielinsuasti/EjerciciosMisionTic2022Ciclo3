@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        header {
+            /* margin : 100 px; */
+            padding : 50px;
+        }
+
+        #buscador-section{
+            margin-bottom: 50px;
+        }
+
+    </style>       
+
+    
+    <header>
+            <h1>BUSCADOR DE PELICULAS</h1>
+    </header>
+
+    <main class="container">
+
+        <section id = "buscador-section">
+            <form>
+                <div class="mb-3">
+                  <label for="textoBuscar" class="form-label">Buscar Pelicula</label>
+                  <input type="text" class="form-control" id="textoBuscar" aria-describedby="emailHelp" required>
+                  <div id="emailHelp" class="form-text">Escriba el nombre de la pelicula a buscar.</div>
+                </div>
+                
+                
+                <button id = "buscarBtn" type="submit" class="btn btn-outline-primary w-100">Buscar Pelicula</button>
+              </form>
+
+        </section>
+
+
+        <section id = "resultados-section" >
+            <article id = "pelicula" class="row">
+
+                <div class="col-12 col-md-6">
+                    <!-- Imagen -->
+                    <img id = "imagenPelicula" src="" alt="">
+
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <!-- Titulo -->
+                    <h1 id = "tituloPelicula"></h1>
+        
+                    
+        
+                    <!-- Descripcion -->
+                    <p id = "plotPelicula"></p>
+        
+        
+                    <!-- Actores -->
+                    <p id = "actoresPelicula"></p>
+        
+                    <!-- Año -->
+                    <p id = "fechaPelicula"></p>
+        
+                    <!-- Enlace -->
+                    <a id = "enlacePelicula" href=""></a>
+
+
+                </div>
+                
+    
+            </article>
+
+        </section>
+        
+
+    </main>
+
+
+    <script src="ejercicio6.js"></script>
+</body>
+</html>

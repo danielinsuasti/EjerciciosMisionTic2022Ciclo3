@@ -76,4 +76,4 @@ const mostrarMatrix = () =>{
 
 }
 
-//mostrarMatrix()
+mostrarMatrix()
