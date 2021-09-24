@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Ejemplo1, Lugar donde existe Vuejs, notacion de bigote -->
+    <div id= "app">
+        {{ mensaje }}
+
+    </div>
+    <br><br><br>
+
+    <!-- Ejemplo2, directva v-bind  -->
+    <!-- Aplica un comportamiento reactivo especial al DOM representado -->
+
+    <div id = "app-2">
+        <h1 v-bind:title = "mensaje">
+            Mueva el mouse sobre mí durante unos segundos
+            para ver mi título enlazado dinámicamente.
+        </h1>
+
+    </div>
+
+    <br><br><br>
+    <!-- Ejemplo3, directva v-if  -->
+    <div id = "app-3">
+        <span v-if = "seen">ME ESTAS VIENDO</span>
+
+    </div>
+    
+
+    <br><br><br>
+    <!-- Ejemplo4, directva v-for  -->
+    <div id = "app-4">
+        <ol>
+            <li v-for = "todo in todos">
+                {{ todo.text }}
+            </li>
+        </ol>
+
+    </div>
+
+    <br><br><br>
+    <!-- Ejemplo5, directva v-on  -->
+    <div id="app-5">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Mensaje invertido</button>
+      </div>
+    
+    <br><br><br>
+
+
+    <!-- Ejemplo6, directva v-on  -->
+
+
+    <div id="app-6">
+        <p>{{ message }}</p>
+        <input v-model="message">
+    </div>
+
+
+
+
+    <!-- versión de desarrollo, incluye advertencias de ayuda en la consola -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
