@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .claseH1{
+            color :blue;
+        }
+
+        .estiloAlerta{
+            color: red;
+        }
+
+        body{
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+    <div id ="app">
+        {{ message2 }}
+
+        <h2>Ejemplo v-bind</h2>
+
+        <!-- <h4 class="claseH1"> -->
+        <h4 v-bind:class="claseH1" v-bind:title = "message2">
+            {{ message }}
+        </h4>
+
+        <h2>Ejemplo v-if and v-else</h2>
+
+        <p v-if = "mostrarTexto">
+            {{ contenidoCard }}
+        </p>
+
+        <p v-else>
+            Alternativa de contenido
+        </p>
+
+
+        <h2>Ejemplo v-for</h2>
+        <ol>
+            <!-- <li v-for = "tarea in tareas"> </li> -->
+            <li v-for = "(tarea, index) in tareas" v-bind:key = "index">
+                {{ tarea.text}} - {{ tarea.estado }}
+            </li>
+        </ol>
+
+        <h2>Ejemplo methods and v-on</h2>
+
+        <!-- <button v-on:click="reverseMessage">Texto invertido</button> -->
+        <button @click="reverseMessage">Texto invertido</button>
+        
+        <h4> {{ message }}</h4>
+
+        <h2>Ejemplo v-model</h2>
+        <p> {{ otroDato }}</p>
+        <input v-model = "otroDato">
+
+
+        <h2>Ejemplo Pelicula desde archivo Json</h2>
+
+        <p> {{ pelicula }} </p>
+        <input v-model="pelicula">
+
+        <!-- <button v-on:click = "searchMovie">Buscar Pelicula</button> -->
+        <button v-bind:disabled="pelicula? false : true" @click = "searchMovie">Buscar Pelicula</button>
+
+        <div v-for = "item in peliculas" v-bind = "item.id"> 
+            <h3>
+                {{ item.Title }}
+            </h3>
+                
+            <p>
+                {{ item.Plot }}
+            </p>
+
+            <img v-bind:src ="item.Poster" alt="">
+
+        </div>
+
+    </div>
+
+    
+
+    
+    <!-- versión de desarrollo, incluye advertencias de ayuda en la consola -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
