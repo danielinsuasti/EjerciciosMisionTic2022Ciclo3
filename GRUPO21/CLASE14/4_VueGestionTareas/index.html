@@ -46,37 +46,44 @@
             </section>
 
             <!-- Seccion para Motrar Tareas -->
+            <div class="row alert alert-light text-center align-items-center" role="alert">
+                <div class="col-12 col-md-4">
+                    Tarea
+                </div>
+
+                <div class="col-12 col-md-4">
+                    Estado
+                </div>
+
+                <div class="col-12 col-md-4">
+                    Accion
+                </div>
+            </div>
+
             <section>
-                <div class="row alert alert-primary text-center align-items-center" role="alert">
+                <div v-for="(item, index) in tareas" :key="index"  :class="['row', 'alert', 'text-center', 'align-items-center', item.estado? 'alert-success' : 'alert-warning']" role="alert">
                     <div class="col-12 col-md-4">
-                        Tarea<!--  {{tarea}} -->
+                         {{ item.nombre }}
+                    </div>
+                    <div class="col-12 col-md-4">
+                        Estado:
+                        <span v-if = "item.estado">
+                            Terminada
+                        </span> 
+
+                        <span v-else>
+                            Pendiente
+                        </span>
+                        
                     </div>
 
                     <div class="col-12 col-md-4">
-                        Estado<!--  {{estado}} -->
-                    </div>
-
-                    <div class="col-12 col-md-4">
-                        <button class="btn btn-light">Cambiar Estado</button>
-                        <button class="btn btn-dark">Eliminar</button>
+                        <button @click = "cambiarEstado(index)" class="btn btn-light">Cambiar Estado</button>
+                        <button @click = "eliminarTarea(index)" class="btn btn-dark">Eliminar</button>
                     </div>
                 </div>
 
-
-                <!-- <div class="row alert alert-success text-center align-items-center" role="alert">
-                    <div class="col-12 col-md-4">
-                        Tarea
-                    </div>
-
-                    <div class="col-12 col-md-4">
-                        Estado
-                    </div>
-
-                    <div class="col-12 col-md-4">
-                        <button class="btn btn-light">Cambiar Estado</button>
-                        <button class="btn btn-dark">Eliminar</button>
-                    </div>
-                </div> -->
+               
 
 
 

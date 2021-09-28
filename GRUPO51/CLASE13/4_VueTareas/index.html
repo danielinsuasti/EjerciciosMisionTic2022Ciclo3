@@ -36,21 +36,15 @@
                       <label for="textoBuscar" class="form-label">Adicionar Tareas</label>
                       <input type="text" class="form-control" v-model="nuevaTarea" aria-describedby="emailHelp"  required >
                       <div id="emailHelp" class="form-text">Escriba la tarea a agregar</div>
-                    </div>
-                    
+                    </div>                  
                     
                     <button @click = "agregarTareas" type="button" v-bind:disabled="nuevaTarea? false : true " class="btn btn-outline-info w-100 ">Crear Tarea</button>
                   </form>   
             </section>
 
-            <!-- seccion Mostrar Tareas -->
-    
-               
-    
+            <!-- seccion Mostrar Tareas -->                  
             
-        </main>
-        
-        
+        </main>       
 
     </div>
 

@@ -23,14 +23,18 @@
     </style>       
 
     <div id ="app">
-        <header>
+
+        <the-menu></the-menu>
+        <header>            
                 <h1>
                     {{ titulo }}
                 </h1>
         </header>
 
-        <main class="container">    
-            <!-- Seccion para buscar Tareas -->
+        <main class="container">
+            
+            
+            <!-- Seccion para Agregar Tareas -->
             <section id = "buscador-section">
                 <form>
                     <div class="mb-3">
@@ -45,42 +49,8 @@
 
             </section>
 
-            <!-- Seccion para Motrar Tareas -->
-            <section>
-                <div class="row alert alert-primary text-center align-items-center" role="alert">
-                    <div class="col-12 col-md-4">
-                        Tarea<!--  {{tarea}} -->
-                    </div>
-
-                    <div class="col-12 col-md-4">
-                        Estado<!--  {{estado}} -->
-                    </div>
-
-                    <div class="col-12 col-md-4">
-                        <button class="btn btn-light">Cambiar Estado</button>
-                        <button class="btn btn-dark">Eliminar</button>
-                    </div>
-                </div>
-
-
-                <!-- <div class="row alert alert-success text-center align-items-center" role="alert">
-                    <div class="col-12 col-md-4">
-                        Tarea
-                    </div>
-
-                    <div class="col-12 col-md-4">
-                        Estado
-                    </div>
-
-                    <div class="col-12 col-md-4">
-                        <button class="btn btn-light">Cambiar Estado</button>
-                        <button class="btn btn-dark">Eliminar</button>
-                    </div>
-                </div> -->
-
-
-
-            </section>
+            <gestor-tareas tareas = ></gestor-tareas>
+         
         
         </main> 
         
@@ -92,6 +62,8 @@
     
     <!-- versión de desarrollo, incluye advertencias de ayuda en la consola -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./components/GestorTareas.js"></script>
+    <script src="components/TheMenu.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
