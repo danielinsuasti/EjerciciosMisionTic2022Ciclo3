@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <style>
+        .claseH1 {
+            color :  blue;
+        }
+
+        .estiloAlerta{
+            color: red;
+        }
+
+    </style>
+    
+    <div id = "app">        
+        {{ message }}
+
+        <h2>Ejemplo v-bind</h2>
+
+        <!-- <h4 class="claseH1"> -->
+        <h4 v-bind:class = "claseH1" v-bind:title= "message">
+             {{ message2 }} 
+        </h4>
+
+        <h2>Ejemplo v-if and v-else</h2>
+        
+        <p v-if = "mostrarTexto" >
+            {{ contenidoCard}}            
+        </p>
+
+        <p v-else>
+            Alternativa al contenido lorem ipsum
+        </p>
+
+
+        <h2>Ejemplo v-for</h2>
+        <ol>
+            <!-- <li v-for = "tarea in tareas">  -->
+            <li v-for = "(tarea, index) in tareas" v-bind:key = "index">
+                {{ tarea.text }} - {{ tarea.estado }}
+            </li>
+        </ol>
+
+
+
+        <h2>Ejemplo methods and v-on</h2>
+
+        <!-- <button v-on:click = "reverseMessage" > Texto Invertido</button> -->
+        <button @click = "reverseMessage" > Texto Invertido</button>
+        <h4>
+            {{ message }}
+        </h4>
+
+        <h2>Ejemplo v-model</h2>
+
+        <p> {{ otroDato }}</p>
+
+        <input v-model = "otroDato">
+
+        <h2>Ejemplo PELICULA desde archivo</h2>
+
+        <div>
+            <input v-model = "pelicula" type="text">
+
+            <button v-on:click= "searchMovie" >Buscar Pelicula</button>
+
+            <div v-for = "item in peliculas" :key= "item.id">
+                <h2>
+                    {{ item.titulo }}
+                </h2>
+
+                <p>
+                    {{ item.descripcion }}
+                </p>
+
+                <img v-bind:src="item.poster" alt="">
+            </div>
+
+        </div>
+        
+
+
+    </div>
+
+
+
+
+
+
+    <!-- versión de desarrollo, incluye advertencias de ayuda en la consola -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
