@@ -37,9 +37,6 @@ var app = new Vue({
             //     poster : responseJson.poster 
             // }]
 
-
-
-
             console.log(this.peliculas)
         }
 
