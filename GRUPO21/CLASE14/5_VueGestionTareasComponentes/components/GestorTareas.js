@@ -1,5 +1,6 @@
 Vue.component("GestorTareas",{
-    template: `
+    template:
+    `
     <div>
             <!-- Seccion para buscar Tareas -->
             <section id = "buscador-section">

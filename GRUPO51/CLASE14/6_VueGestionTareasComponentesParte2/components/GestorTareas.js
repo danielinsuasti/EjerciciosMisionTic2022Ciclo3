@@ -1,6 +1,7 @@
 Vue.component("GestorTareas",{
-    props: ['tareas'] ,
-    template:`
+    props: ['tareas'],
+    template://html
+    `
         <div>
             
 
