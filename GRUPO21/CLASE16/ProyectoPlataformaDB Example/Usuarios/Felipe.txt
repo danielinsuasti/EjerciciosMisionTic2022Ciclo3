@@ -1,0 +1,24 @@
+{
+	"_id" : 6546541231268,
+	"nombre" : "Felipe",
+	"correo" : "fessds@hotmail.com",
+	"estado" : 1,
+	"rol" : "Administrador",
+	"direccion" : "calle 4",
+	"telefono" : "54654616",
+	"familiares" : [
+		{
+			"nombre" : "Angelica",
+		 	"tipo" : "Madre",
+		 	"edad" : 35
+		 },
+		{
+			"nombre" : "Alberto",
+			"tipo" : "Padre",
+			"edad" : 40 
+
+		}
+	],
+
+	"createdAt" : "2021-10-04 T 15:17:00"
+}

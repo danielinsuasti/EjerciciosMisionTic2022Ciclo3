@@ -1,0 +1,8 @@
+{
+	"_id" : 65465465168,
+	"nombre" : "luis",
+	"correo" : "luis@hotmail.com",
+	"estado" : 1,
+	"rol" : "Administrador",
+	"createdAt" : "2021-10-04 T 15:17:00"
+}
