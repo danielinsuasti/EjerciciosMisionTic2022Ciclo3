@@ -1,0 +1,19 @@
+{
+	"_id" : 65654684,
+	"nombre" : "Luis",
+	"correo" : "luis@gmail.com",
+	"estado" : 1,
+	"rol" : "Administrador",
+	"direccion" : "calle4",
+	"Telefono" : "65465465",
+	"Familiares" : [
+		{"nombre" : "Angelica",
+		 "tipo" : "Madre",
+		 "edad" : 35},
+		{"nombre" : "Alberto",
+		 "tipo" : "Padre",
+		 "edad" : 35}
+	],
+	"createdAt" : "2021-10-04 T 19:25:00"
+
+}

@@ -1,0 +1,9 @@
+{
+	"_id" : 65654684,
+	"nombre" : "Luis",
+	"correo" : "luis@gmail.com",
+	"estado" : 1,
+	"rol" : "Administrador",
+	"createdAt" : "2021-10-04 T 19:25:00"
+
+}
