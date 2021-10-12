@@ -15,13 +15,13 @@ app.use(express.json()); // Me permite enviar y recibir respuestas tipo json
 app.use(express.urlencoded({ extended : true })) // para permitir que las envie por URL-encoded
 
 
-//Manejador de peticiones / rutas
-app.get('/', function (req, res) {
-  // res.send('Hello World') // Devolver un mensaje, un JSon, un codigo de status
-  res.status(200).json(    {     
-    "respuesta" : "UN JSON"
-  })
-})
+// //Manejador de peticiones / rutas
+// app.get('/', function (req, res) {
+//   // res.send('Hello World') // Devolver un mensaje, un JSon, un codigo de status
+//   res.status(200).json(    {     
+//     "respuesta" : "UN JSON"
+//   })
+// })
 
 //CONEXION A LA DB
 
