@@ -90,7 +90,7 @@ import axios from 'axios';
         })
         .catch(err =>{
             this.mensaje = null;
-            if([404, 401].includes(err.respuesta.status)){
+            if([404, 401].includes(err.response.status)){
                 this.mensaje = 'El correo o la contraseña son incorrectos'
                 console.log(this.mensaje)
             }else{
@@ -99,9 +99,6 @@ import axios from 'axios';
             }
 
         })
-
-
-
 
       },
       reset () {
