@@ -2,8 +2,8 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="About">About</router-link>
-      <router-link to="Login">Login</router-link>
-      <router-link to="Admin">Admin</router-link>      
+      <router-link to="Login" v-if="!isLogin">Login</router-link>
+      <router-link to="Admin" v-else>Admin</router-link>      
     </div>
 </template>
 
@@ -11,6 +11,11 @@
 <script>
 export default {
     name: 'TheNavigation',
+    computed : {
+      isLogin(){
+        return localStorage.getItem('token') //Revisar si existe un token en el localstorage, si eso pasa es porque estamos logueados
+      }
+    }
 }
 </script>
 

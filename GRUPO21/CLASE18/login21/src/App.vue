@@ -36,8 +36,8 @@
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar> -->
-
-    <header>
+    <!-- Si se encuentra en la ruta de admin, que NO  muestre  el navigation, en caso contrario que  muestre el navigation -->
+    <header v-show ="!['Admin'].includes($route.name)"> 
       <the-navigation/>
     </header>
 

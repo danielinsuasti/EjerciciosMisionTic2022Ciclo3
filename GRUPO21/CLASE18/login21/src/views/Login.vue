@@ -10,7 +10,14 @@ import TheLogin from '../components/TheLogin.vue'
 
 export default {
     components: { TheLogin },
-    name:"Login"
+    name:"Login",
+    beforeCreate(){
+        if(localStorage.getItem('token')){
+            this.$router.push({
+                name : 'Admin'
+            })
+        }
+    }
 }
 
 </script>

@@ -29,7 +29,10 @@ const routes = [
     children : [
       { //   /admin/usuarios
         path : 'usuarios',
-        name : 'Usuarios'
+        name : 'Usuarios',
+        meta : {
+          Administrador : true
+        }
       },
       { //   /admin/categorias
         path : 'categorias',
@@ -55,17 +58,28 @@ router.beforeEach((to, from, next) => { // De acuerdo al ciclo de vida, signific
   if (to.matched.some(record => record.meta.requiresAuth)) {
     // this route requires auth, check if logged in
     // if not, redirect to login page.
-    let token = decode(localStorage.getItem('token'))
+    let token = localStorage.getItem('token')
     if (!token) {
       next({
         name : 'Login',
-        // path: '/login',
-        // query: { redirect: to.fullPath }
+
       })
-    } else {
-      next()
+    } else {//si requiere el administrador
+      let auxRol = decode(token)  //primero obtengo el token
+      let rolToken = auxRol["rol"]; //de todo el token decodificado, obtengo solo el rol
+      if(to.matched.some(record => record.meta.Administrador)){
+        if(rolToken === 'Administrador'){
+          next()
+        }else{
+          next({
+            name : 'Admin'
+          })
+        }
+      }else {
+        next();      
     }
-  } else {
+  }     
+  }else{
     next() // make sure to always call next()!
   }
 })
