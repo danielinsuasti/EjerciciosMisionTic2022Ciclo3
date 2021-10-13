@@ -10,7 +10,7 @@ const UsuarioController = require('../controllers/UsuarioController');
 router.post('/add', UsuarioController.add);
 
 //metodos publicos
-//router.post("/login", UsuarioController.login);
+router.post("/login", UsuarioController.login);
 
 
 
