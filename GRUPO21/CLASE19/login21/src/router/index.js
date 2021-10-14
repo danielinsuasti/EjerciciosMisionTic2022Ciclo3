@@ -32,7 +32,10 @@ const routes = [
         name : 'Usuarios',
         meta : {
           Administrador : true
-        }
+        },
+        // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+        component: () => import(/* webpackChunkName: "about" */ '../components/UsuariosDT.vue')
+
       },
       { //   /admin/categorias
         path : 'categorias',

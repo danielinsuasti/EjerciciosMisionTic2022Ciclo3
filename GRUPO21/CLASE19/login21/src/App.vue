@@ -37,7 +37,7 @@
       </v-btn>
     </v-app-bar> -->
     <!-- Si se encuentra en la ruta de admin, que NO  muestre  el navigation, en caso contrario que  muestre el navigation -->
-    <header v-show ="!['Admin'].includes($route.name)"> 
+    <header v-show ="!['Admin', 'Categorias', 'Articulos', 'Usuarios'].includes($route.name)"> 
       <the-navigation/>
     </header>
 
